@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../App.css';
+import OnlyDate from './OnlyDate';
 
 
 
@@ -16,13 +17,7 @@ function WeatherWeeklyCard({ weatherData }) {
 
     const weeklyArray = weatherData.daily
 
-    function OnlyDate({ index }) {
-        const unixTime = index.dt;
-        const date = new Date(unixTime * 1000);
-
-        return date.toLocaleDateString("nl-NL")
-
-    }
+    
 
     return (
         <div className="accordion-wrapper">

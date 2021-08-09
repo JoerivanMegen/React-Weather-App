@@ -20,6 +20,7 @@ body{
     height: 475px;
     margin-top: 3vh;
     background-image: url(./images/maastricht.jpeg);
+    background-size: 239%;
     box-shadow: black 2px  2px 10px;
     margin-left: 2vw;
     margin-right: 2vw;
@@ -190,4 +191,7 @@ h1{
     width: 220px;
     border-radius: 1em;
     font-weight: bold;
+}
+.accordion.maastricht .accordion-item .accordion-content.open{
+    color: rgb(214, 214, 214);
 }

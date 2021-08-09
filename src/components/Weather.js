@@ -41,6 +41,8 @@ export default function Weather({ city, lat, lon }) {
       <ReactCardFlip 
         isFlipped={isFlipped}
         flipDirection="horizontal"
+        flipSpeedBackToFront="0.7"
+        flipSpeedFrontToBack="0.7"
       >
         <div className="App">
           {typeof currentData.main != "undefined" ? (
@@ -48,7 +50,7 @@ export default function Weather({ city, lat, lon }) {
           ) : (
             <div></div>
           )}
-          <button className="frontToBack" onClick={handleClick}>Bekijk de komende week!</button>
+          <button className="frontToBack" onClick={handleClick}>Bekijk de komende week! &gt;</button>
         </div>
         <div className="AppWeekly">
           {typeof weeklyData.daily != "undefined" ? (
